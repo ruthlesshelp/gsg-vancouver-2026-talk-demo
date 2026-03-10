@@ -141,6 +141,8 @@ checkout_dojo/
 This coding dojo focuses on:
 
 - **Test-Driven Development**: Write tests first, implement to make them pass
+- **Pair Programming**: Stay closely involved in the lowest levels of the implementation loop
+- **Collective Code Ownership**: Encourage developers to feel responsible for the quality of the code
 
 ## License
 
