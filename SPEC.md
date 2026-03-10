@@ -29,12 +29,12 @@ Calculates the total price of all scanned items, applying applicable discounts.
 
 ## Product Catalog
 
-| SKU | Unit Price (cents) | Quantity Discount |
-|-----|-------------------|-------------------|
-| APP | 31 | 3 for 81 |
-| BAN | 13 | 2 for 20 |
-| CORN | 47 | none |
-| DIP | 29 | none |
+| SKU  | Unit Price (¢) | Discount              |
+|------|----------------|-----------------------|
+| APP  | 31             | 3 for 81¢ (saves 12¢) |
+| BAN  | 13             | 2 for 20¢ (saves 6¢)  |
+| CORN | 47             | none                  |
+| DIP  | 29             | none                  |
 
 ## Discount Rules
 

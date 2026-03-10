@@ -2,6 +2,8 @@
 
 Python test-driven development (TDD) exercises for the Global Scrum Gathering Vancouver 2026 "AI and Agile Engineering" talk's live coding demonstration. See https://www.gsgvan26.com/agenda/session/1820794
 
+This is a **kata** (a small, focused exercise designed to teach and practice skills) and not a production library. Its pedagogical goal is to illustrate three phases of human–AI collaboration during test-driven development.
+
 This project is a shopping cart price calculator that computes the total cost of items scanned at a supermarket checkout, applying quantity-based discounts where applicable.
 
 The kata is described in the [KATA.md](KATA.md) file.
@@ -49,9 +51,16 @@ deactivate
 
 ### Setup Instructions
 
+Python modules are packages, which can be imported into a project to use.
+
+Upgrade `pip` before installing dependencies:
+```bash
+pip install --upgrade pip
+```
+
 Install dependencies:
 ```bash
-pip install pytest pytest-cov
+pip install pytest pytest-cov flake8
 ```
 
 ## Tests
@@ -66,6 +75,13 @@ pytest tests/ -v
 **Run tests with coverage:**
 ```bash
 python -m pytest tests/ -v --cov=src --cov-report=html --cov-report=term-missing
+```
+
+## Linting
+
+**Run flake8 to check for style and syntax issues:**
+```bash
+flake8 src/ tests/
 ```
 
 ## Problem Statement
@@ -106,11 +122,18 @@ print(co.total())  # 94 (3 APP for 81 + 1 BAN for 13)
 
 ```
 checkout_dojo/
-├── KATA.md             # Description of the kata
-├── SPEC.md             # Functional specification
-├── src/                # Python source code
-├── tests/              # Python test code
-└── TEST_PLAN.md        # Examples of testing scenarios
+├── KATA.md               # Exercise instructions (3 phases)
+├── SPEC.md               # Business requirements (source of truth)
+├── TEST_PLAN.md          # Scenarios to translate into pytest tests
+├── README.md             # Installation, usage, problem statement
+├── LICENSE               # MIT
+├── pyproject.toml        # pytest config only (pythonpath = ["src"])
+├── src/
+│   ├── __init__.py       # Module marker (comment: "Makes src a Python module")
+│   └── checkout.py       # Checkout class — STUB ONLY
+└── tests/
+    ├── __init__.py       # Empty
+    └── test_checkout.py  # 1 test — currently FAILING
 ```
 
 ## Learning Objectives

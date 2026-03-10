@@ -71,6 +71,7 @@ See this how-to on [Installation](README.md#installation)
 
 - You decide the next test; the agent may propose a test but you approve it
 - The agent can write code, but you run tests and interpret failures
+- Red/green/refactor discipline maintained.
 - All changes must be justified by a test or a refactor plan
 
 **Suggested steps**
