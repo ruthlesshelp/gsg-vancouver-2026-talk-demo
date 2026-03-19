@@ -7,7 +7,15 @@ This test plan covers the validation of a supermarket checkout system as specifi
 1. **Basic Functionality**
     - No items: total is 0
     - Single item of each product: correct total per SKU
+        - APP => 31¢
+        - BAN => 13¢
+        - CORN => 47¢
+        - DIP => 29¢
     - Two different items: correct combined total
+        - APP + BAN => 44¢
+        - APP + CORN => 78¢
+        - BAN + CORN => 60¢
+        - BAN + DIP => 42¢
 
 2. **Error Handling**
     - Unknown SKU: raises error
