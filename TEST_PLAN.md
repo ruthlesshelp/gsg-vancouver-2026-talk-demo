@@ -63,7 +63,7 @@ This test plan covers the validation of a supermarket checkout system as specifi
 - Multiple CORN and DIP (no discounts)
 
 ## Acceptance Criteria
-- All scenarios must pass as described in tests.feature
+- All scenarios must pass as described in TEST_PLAN.md (this file)
 - Totals must match expected values
 - Discounts must be applied correctly
 - Errors must be raised for invalid SKUs
